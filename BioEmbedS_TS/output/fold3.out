@@ -1,0 +1,130 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Fold: 3
+train+val available bins:
+[0, 1, 2, 4]
+Nested fold: 0
+validation bin: 0
+train available bins:
+[1, 2, 4]
+Counter({1: 112, 5: 112, 6: 112, 7: 112, 8: 112, 9: 112, 11: 112, 12: 112, 13: 112, 14: 112, 15: 112, 16: 112, 10: 111, 2: 110, 3: 110, 4: 109})
+Train shape
+(2260, 400)
+(2260,)
+Validation shape
+(238, 400)
+(238,)
+Nested fold: 1
+validation bin: 1
+train available bins:
+[0, 2, 4]
+Counter({1: 113, 3: 113, 5: 113, 6: 113, 7: 113, 8: 113, 9: 113, 11: 113, 12: 113, 13: 113, 14: 113, 2: 112, 4: 112, 10: 111})
+Train shape
+(2016, 400)
+(2016,)
+Validation shape
+(223, 400)
+(223,)
+Nested fold: 2
+validation bin: 2
+train available bins:
+[0, 1, 4]
+Counter({1: 117, 5: 117, 6: 117, 7: 117, 8: 117, 9: 117, 11: 117, 12: 117, 13: 117, 14: 117, 2: 116, 10: 115, 3: 113, 4: 110})
+Train shape
+(2052, 400)
+(2052,)
+Validation shape
+(221, 400)
+(221,)
+Nested fold: 3
+validation bin: 4
+train available bins:
+[0, 1, 2]
+Counter({1: 120, 2: 120, 5: 120, 6: 120, 7: 120, 8: 120, 9: 120, 10: 120, 11: 120, 13: 120, 14: 120, 15: 120, 16: 120, 17: 120, 18: 120, 12: 119, 3: 118, 4: 117})
+Train shape
+(2656, 400)
+(2656,)
+Validation shape
+(241, 400)
+(241,)
+best parameters: svm/poly/100.0/5
+best validation score: 0.48160402348983034
+{'C': 100.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 5, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+Counter({1: 154, 2: 154, 3: 154, 4: 154, 7: 154, 8: 154, 9: 154, 10: 154, 11: 154, 12: 154, 13: 154, 15: 154, 16: 154, 17: 154, 18: 154, 19: 154, 20: 154, 21: 154, 22: 154, 14: 153, 5: 150, 6: 149})
+Train shape
+(4116, 400)
+(4116,)
+Training results: fold-3
+[[2204   22]
+ [   0 1890]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00      2226
+           1       0.99      1.00      0.99      1890
+
+    accuracy                           0.99      4116
+   macro avg       0.99      1.00      0.99      4116
+weighted avg       0.99      0.99      0.99      4116
+
+Test shape
+(262, 400)
+(262,)
+Testing results: fold-3
+0.561960810539691
+[[153  26]
+ [ 24  59]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.85      0.86       179
+           1       0.69      0.71      0.70        83
+
+    accuracy                           0.81       262
+   macro avg       0.78      0.78      0.78       262
+weighted avg       0.81      0.81      0.81       262
+
+ROC-AUC score: 0.8613448206232753
+PR-AUC score: 0.775980139317968
+[['aldosterone', 'cortisol', 'glucagon', 'luteinizing hormone', 'progesterone', 'prolactin', 'prostaglandins', 'somatostatin', 'testosterone', 'triiodothyronin t3', 'thyroxine t4', 'adrenocorticotropin', 'norepinephrine', 'adiponectin', 'adrenaline/epinephrine', 'somatotrophin/growth hormone', 'vitamin d/calciferol', 'follicle-stimulating hormone/follitropin'], ['estrogen', 'vascular endothelial growth factor', 'serotonin/5-hydroxytryptamine'], ['insulin']]
+[ 5.         11.         15.66666667 94.        ]
+Testing results for bin 1
+bin_size
+(76, 400)
+[[45  6]
+ [ 3 22]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.88      0.91        51
+           1       0.79      0.88      0.83        25
+
+    accuracy                           0.88        76
+   macro avg       0.86      0.88      0.87        76
+weighted avg       0.89      0.88      0.88        76
+
+Testing results for bin 2
+bin_size
+(92, 400)
+[[66  6]
+ [ 7 13]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.92      0.91        72
+           1       0.68      0.65      0.67        20
+
+    accuracy                           0.86        92
+   macro avg       0.79      0.78      0.79        92
+weighted avg       0.86      0.86      0.86        92
+
+Testing results for bin 3
+bin_size
+(94, 400)
+[[42 14]
+ [14 24]]
+              precision    recall  f1-score   support
+
+           0       0.75      0.75      0.75        56
+           1       0.63      0.63      0.63        38
+
+    accuracy                           0.70        94
+   macro avg       0.69      0.69      0.69        94
+weighted avg       0.70      0.70      0.70        94
+
