@@ -1,6 +1,6 @@
 # Identifying cross-tissue signaling between genes from biomedical literature
 
-This is the official repository of the paper "Identifying cross-tissue signaling between genes from biomedical literature"  
+This is the official repository of the paper "Identifying gene mediators of cross-tissuesignaling from biomedical literature usingbalanced word embeddings"  
 
 
 ## Installation
