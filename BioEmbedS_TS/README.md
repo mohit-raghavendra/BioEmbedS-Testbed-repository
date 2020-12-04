@@ -1,6 +1,8 @@
 The results for this Machine learning setup are reported using 5 fold cross validation. This folder contains a seperate file for each fold.
 The entire dataset is already divided into 5 bins considering only the hormones having atleast 5 genes. One set of bins is for source genes and the other for target associated genes.
-Each file can be run seperately. Make sure the folder structure for reading the input and writing the output is correct depending on the path from which you execute the script.
+
+Make sure to change the test_bin = 0, to [1,2,3 or 4] to run the required fold instead of the 0th fold. 
+
 The files generated for the complete run of 5 folds is present in the folders for reference
 
 If there is problems in loading the fasttext model file, please use the all_word_embeddings.json file in the dataset folder which has the embeddings for the required tokens extracted from the model.
