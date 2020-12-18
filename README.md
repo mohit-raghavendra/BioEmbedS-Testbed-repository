@@ -11,7 +11,7 @@ See ```requirements.txt``` file for the list of dependencies. Setup everything b
 ## Running
 
 1. Navigate to either BioEmbedS or BioEmbedS-TS  
-2. Run all the BioEmbedS_fold[i].py files where [i] is the fold, numbered 0 to 4. 
+2. Follow the instructions in the README file of the appropriate folder. 
 
 ## Results
 
