@@ -313,8 +313,12 @@ for param_str in param_str_set:
 
 
 all_bins = [0,1,2,3,4]
-# This script runs considering bin 1 as the test set.
-test_bin = 1
+# This script runs considering bin 0 as the test set.
+print("Enter the test bin number, among [0, 1, 2, 3, 4]")
+test_bin = int(input())
+if test_bin < 0 or test_bin > 4:
+    test_bin = 0
+    
 print("Fold: "+str(test_bin))
 all_bins.remove(test_bin)
 print("train+val available bins:")
