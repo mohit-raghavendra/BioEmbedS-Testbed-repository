@@ -1,6 +1,6 @@
 # Identifying gene mediators of cross-tissue signaling from biomedical literature using balanced word embeddings
 
-This is the official repository of the paper "Identifying gene mediators of cross-tissue signaling from biomedical literature using balanced word embeddings"  
+This is the official repository of the paper "Identifying gene mediators of cross-tissue signaling from biomedical literature using balanced word embeddings".  
 
 
 ## Installation
