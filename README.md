@@ -1,4 +1,4 @@
-# Identifying gene mediators of cross-tissue signaling from biomedical literature using balanced word embeddings
+# Predicting cross-tissue hormone-gene relations using balanced word embeddings.
 This is the testbed repository of the paper "Identifying gene mediators of cross-tissue signaling from biomedical literature using balanced word embeddings", and was implemented by Aditya Jadhav and Mohit Raghavendra.
 
 ## Installation
@@ -22,7 +22,7 @@ Copyright 2020 - Aditya Jadhav, Mohit R, and Manikandan Narayanan from BIRDS Gro
 
 This repository is part of BioEmbedS project:
 
-#### Predicting cross-tissue hormone-gene relations usingbalanced word embeddings.
+#### Predicting cross-tissue hormone-gene relations using balanced word embeddings.
 - Aditya Jadhav, Mohit Raghavendra, Tarun Kumar, Tamizhini Loganathan and Manikandan Narayanan.
 
 BioEmbedS is free software: you can redistribute it and/or modify
