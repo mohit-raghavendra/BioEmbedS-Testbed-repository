@@ -1,6 +1,6 @@
 # Predicting cross-tissue hormone-gene relations using balanced word embeddings.
 
-This is the official repository of the paper "Predicting cross-tissue hormone-gene relations using balanced word embeddings." by Aditya Jadhav, Tarun Kumar+, Mohit Raghavendra+, Tamizhini Loganathan, and Manikandan Narayanan (+ equal contributions). 
+This is the *testbed* repository of the paper "Predicting cross-tissue hormone-gene relations using balanced word embeddings." by Aditya Jadhav, Tarun Kumar+, Mohit Raghavendra+, Tamizhini Loganathan, and Manikandan Narayanan (+ equal contributions). 
 
 The code was developed by Aditya Jadhav, Mohit R, and Manikandan Narayanan (in consultation with the other co-authors of the paper listed above), and these developers are jointly referred to as the "BIRDS Group, IIT Madras" in the preamble of all code files in this BioEmbedS project.  
 
