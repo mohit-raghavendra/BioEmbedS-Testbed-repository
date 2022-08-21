@@ -1,0 +1,38 @@
+--Figure/Table to Code mappings for Main text:
+----Figures
+Fig. 1 -> Overview figure, so code not relevant (also, inset is simple histogram view of HGv1 database in HGv1_Gene.json file, so code not provided). 
+Fig. 2 - 2a hierarchical clustering done using Morpheus tool (https://software.broadinstitute.org/morpheus/) applied on fasttext_word_embeddings.json file, and 2b network visualization generated using Cytoscape tool (https://cytoscape.org/); so code not relevant.
+Fig. 3a -> STRING_comparison/STRING-unequal_hormones_out_of_14.ipynb
+Fig. 3b -> BioEmbedS/results_on_out_of_training_hormones.ipynb
+Fig. 3c -> BioEmbedS_TS/generate_roc_pr_curves.ipynb
+Fig. 3d -> BioEmbedS_TS/out_of_training_hormones_analysis.ipynb
+Fig. 4 -> BioEmbedS/human_vs_mouse.ipynb
+Fig. 5 -> Generated using enrichment analysis results from applying Enrichr tool on known disease genes in DisGeNET and hormone-gene predictions in all_novel_predictions.csv file; please see Methods in main text for more details; so code not relevant
+Fig. 6 -> Recall-at-k-plots/recall-at-k.py; please see README file in that subfolder. 
+
+----Tables
+Table 1 -> Example entries from HGv1 database in HGv1_Gene.json file, so code not relevant. 
+Table 2 -> Simple summary of HGv1 database in HGv1_Gene.json file, so code not provided. 
+Table 3 -> BioEmbedS/BioEmbedS_disease_gene_predictions.py
+Table 4 -> BioEmbedS_TS/BioEmbedS_TS_fold_num.py (Replace num with numbers from 0 to 4, to get results for every fold)
+Table 5 -> Simple overlap between two gene sets, so code not provided.
+	
+	   
+--Figure/Table to Code mappings for Supplement:
+----Suppl Figures
+Suppl Fig. S1: BioEmbedS/cosine_similarity_analysis.ipynb
+Suppl Fig. S2: Recall-at-k-plots/*.py; please see README file in that subfolder.
+Suppl Fig. S3: hhsim.alt.R
+
+----Suppl Tables
+Suppl Table S1: BioEmbedS/BioEmbedS_fold0.py (Replace num with numbers from 0 to 4, to get results for every fold)
+Suppl Table S2: Various machine learning models besides SVM; code not provided.
+Suppl Table S3: BioBERT(200D) -> averaged across the 5 folds. files:BioEmbedS_biobert/BioEmbedS_fold0.py;  BioBERT(768D) -> averaged across the 5 folds. files:BioEmbedS_biobert_700/BioEmbedS_fold0.py
+Suppl Table S4: Average across 5 folds. File: BioEmbedS/BioEmbedS_fold0.py (Replace num with numbers from 0 to 4, to get results for every fold)
+Suppl Table S5: Average across 5 folds. File: BioEmbedS_TS/BioEmbedS_TS_fold_num.py (Replace num with numbers from 0 to 4, to get results for every fold)
+
+----Suppl Files
+Suppl File D1: file:BioEmbedS/BioEmbedS_hormonewise_foldwise_results.py - Hormone-wise performance of BioEmbedS model (averaged across the 5 CV test folds)
+Suppl File D2a: Results compiled from outputs of different tools (e.g., Enrichr) and databases (e.g., DisGeNet; see Suppl File Caption for details); so code not relevant.
+Suppl File D2b: Results compiled from outputs of different tools (e.g., Enrichr) and databases (e.g., DisGeNet; see Suppl File Caption for details); so code not relevant. 
+
