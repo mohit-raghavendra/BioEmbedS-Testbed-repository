@@ -1,0 +1,122 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Results for duplicate genes
+[[48 31]
+ [45 92]]
+              precision    recall  f1-score   support
+
+           0       0.52      0.61      0.56        79
+           1       0.75      0.67      0.71       137
+
+    accuracy                           0.65       216
+   macro avg       0.63      0.64      0.63       216
+weighted avg       0.66      0.65      0.65       216
+
+Results for non duplicate genes
+[[190  87]
+ [ 40 179]]
+              precision    recall  f1-score   support
+
+           0       0.83      0.69      0.75       277
+           1       0.67      0.82      0.74       219
+
+    accuracy                           0.74       496
+   macro avg       0.75      0.75      0.74       496
+weighted avg       0.76      0.74      0.74       496
+
+Results for duplicate genes
+[[ 49  31]
+ [ 41 101]]
+              precision    recall  f1-score   support
+
+           0       0.54      0.61      0.58        80
+           1       0.77      0.71      0.74       142
+
+    accuracy                           0.68       222
+   macro avg       0.65      0.66      0.66       222
+weighted avg       0.69      0.68      0.68       222
+
+Results for non duplicate genes
+[[199  81]
+ [ 63 155]]
+              precision    recall  f1-score   support
+
+           0       0.76      0.71      0.73       280
+           1       0.66      0.71      0.68       218
+
+    accuracy                           0.71       498
+   macro avg       0.71      0.71      0.71       498
+weighted avg       0.71      0.71      0.71       498
+
+Results for duplicate genes
+[[36 35]
+ [48 98]]
+              precision    recall  f1-score   support
+
+           0       0.43      0.51      0.46        71
+           1       0.74      0.67      0.70       146
+
+    accuracy                           0.62       217
+   macro avg       0.58      0.59      0.58       217
+weighted avg       0.64      0.62      0.62       217
+
+Results for non duplicate genes
+[[205  90]
+ [ 60 160]]
+              precision    recall  f1-score   support
+
+           0       0.77      0.69      0.73       295
+           1       0.64      0.73      0.68       220
+
+    accuracy                           0.71       515
+   macro avg       0.71      0.71      0.71       515
+weighted avg       0.72      0.71      0.71       515
+
+Results for duplicate genes
+[[ 48  40]
+ [ 36 124]]
+              precision    recall  f1-score   support
+
+           0       0.57      0.55      0.56        88
+           1       0.76      0.78      0.77       160
+
+    accuracy                           0.69       248
+   macro avg       0.66      0.66      0.66       248
+weighted avg       0.69      0.69      0.69       248
+
+Results for non duplicate genes
+[[197  77]
+ [ 43 159]]
+              precision    recall  f1-score   support
+
+           0       0.82      0.72      0.77       274
+           1       0.67      0.79      0.73       202
+
+    accuracy                           0.75       476
+   macro avg       0.75      0.75      0.75       476
+weighted avg       0.76      0.75      0.75       476
+
+Results for duplicate genes
+[[49 34]
+ [53 94]]
+              precision    recall  f1-score   support
+
+           0       0.48      0.59      0.53        83
+           1       0.73      0.64      0.68       147
+
+    accuracy                           0.62       230
+   macro avg       0.61      0.61      0.61       230
+weighted avg       0.64      0.62      0.63       230
+
+Results for non duplicate genes
+[[196  79]
+ [ 48 163]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.71      0.76       275
+           1       0.67      0.77      0.72       211
+
+    accuracy                           0.74       486
+   macro avg       0.74      0.74      0.74       486
+weighted avg       0.75      0.74      0.74       486
+

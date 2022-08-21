@@ -1,0 +1,140 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+Fold: 4
+train+val available bins:
+[0, 1, 2, 3]
+Nested fold: 0
+validation bin: 0
+train available bins:
+[1, 2, 3]
+train shape
+(12562, 400)
+(12562,)
+Validation shape
+(712, 400)
+(712,)
+Done with gridsearch
+Nested fold: 1
+validation bin: 1
+train available bins:
+[0, 2, 3]
+train shape
+(13420, 400)
+(13420,)
+Validation shape
+(720, 400)
+(720,)
+Done with gridsearch
+Nested fold: 2
+validation bin: 2
+train available bins:
+[0, 1, 3]
+train shape
+(13316, 400)
+(13316,)
+Validation shape
+(732, 400)
+(732,)
+Done with gridsearch
+Nested fold: 3
+validation bin: 3
+train available bins:
+[0, 1, 2]
+train shape
+(14092, 400)
+(14092,)
+Validation shape
+(724, 400)
+(724,)
+Done with gridsearch
+best parameters: svm/poly/1.0/3
+best validation score: 0.3907382444177818
+{'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'poly', 'max_iter': -1, 'probability': False, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
+train shape
+(19236, 400)
+(19236,)
+Training results: fold-4
+[[9261  357]
+ [ 211 9407]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97      9618
+           1       0.96      0.98      0.97      9618
+
+    accuracy                           0.97     19236
+   macro avg       0.97      0.97      0.97     19236
+weighted avg       0.97      0.97      0.97     19236
+
+Testing results: fold-4
+Kappa score: 0.40220385674931125
+[[249 114]
+ [103 260]]
+              precision    recall  f1-score   support
+
+           0       0.71      0.69      0.70       363
+           1       0.70      0.72      0.71       363
+
+    accuracy                           0.70       726
+   macro avg       0.70      0.70      0.70       726
+weighted avg       0.70      0.70      0.70       726
+
+ROC-AUC score: 0.7648536453945921
+PR-AUC score: 0.7413468881719356
+Testing results for bin 1
+bin_size
+(68, 400)
+[[29  5]
+ [12 22]]
+              precision    recall  f1-score   support
+
+           0       0.71      0.85      0.77        34
+           1       0.81      0.65      0.72        34
+
+    accuracy                           0.75        68
+   macro avg       0.76      0.75      0.75        68
+weighted avg       0.76      0.75      0.75        68
+
+Testing results for bin 2
+bin_size
+(128, 400)
+[[47 17]
+ [26 38]]
+              precision    recall  f1-score   support
+
+           0       0.64      0.73      0.69        64
+           1       0.69      0.59      0.64        64
+
+    accuracy                           0.66       128
+   macro avg       0.67      0.66      0.66       128
+weighted avg       0.67      0.66      0.66       128
+
+Testing results for bin 3
+bin_size
+(332, 400)
+[[104  62]
+ [ 44 122]]
+              precision    recall  f1-score   support
+
+           0       0.70      0.63      0.66       166
+           1       0.66      0.73      0.70       166
+
+    accuracy                           0.68       332
+   macro avg       0.68      0.68      0.68       332
+weighted avg       0.68      0.68      0.68       332
+
+Testing results for bin 4
+bin_size
+(198, 400)
+[[69 30]
+ [21 78]]
+              precision    recall  f1-score   support
+
+           0       0.77      0.70      0.73        99
+           1       0.72      0.79      0.75        99
+
+    accuracy                           0.74       198
+   macro avg       0.74      0.74      0.74       198
+weighted avg       0.74      0.74      0.74       198
+
+
+

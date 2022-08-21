@@ -1,0 +1,35 @@
+Hormone,#all human genes,#pos human genes,#all mouse genes,#pos mouse genes,#all intersection,#pos intersection,Accuracy human,Recall human
+aldosterone,36,18,42,21,11,11,0.68,0.67
+angiotensin,46,23,52,26,14,14,0.67,0.67
+calcitonin,24,12,24,12,9,9,0.93,1.0
+cortisol,38,19,34,17,13,13,0.58,0.58
+erythropoietin,14,7,10,5,3,3,0.78,0.69
+estrogen,294,147,342,171,109,89,0.68,0.76
+glucagon,74,37,46,23,14,13,0.73,0.73
+insulin,794,397,940,470,424,310,0.71,0.74
+leptin,42,21,46,23,17,17,0.63,0.61
+melatonin,14,7,14,7,6,6,0.61,0.57
+peptide yy,8,4,10,5,3,3,0.8,0.8
+progesterone,118,59,92,46,33,30,0.68,0.7
+prolactin,18,9,72,36,6,6,0.58,0.56
+prostaglandins,122,61,140,70,48,45,0.6,0.6
+relaxin,12,6,0,0,0,0,1.0,1.0
+testosterone,82,41,60,30,16,15,0.61,0.61
+adrenocorticotropin,20,10,30,15,9,9,0.88,0.81
+thyrotropin-releasing hormone,10,5,12,6,3,3,0.71,0.71
+gonadotropin-releasing hormone,16,8,14,7,5,5,0.65,0.62
+vascular endothelial growth factor,336,168,250,125,97,83,0.77,0.8
+norepinephrine,74,37,102,51,31,31,0.77,0.74
+adiponectin,24,12,28,14,11,11,0.7,0.67
+a-type natriuretic peptide,10,5,14,7,4,4,0.79,0.7
+adrenaline/epinephrine,58,29,68,34,25,22,0.79,0.73
+estradiol/oestradiol,232,116,118,59,35,30,0.64,0.67
+somatotrophin/growth hormone,86,43,76,38,28,25,0.6,0.61
+parathyroid hormone/parathyrin,26,13,22,11,7,7,0.75,0.67
+serotonin/5-hydroxytryptamine,130,65,178,89,49,46,0.84,0.83
+vitamin d/calciferol,98,49,58,29,19,18,0.68,0.65
+follicle-stimulating hormone/follitropin,42,21,48,24,13,13,0.67,0.63
+antidiuretic hormone/vasopressin,24,12,30,15,10,10,0.7,0.64
+thymosin,18,9,0,0,0,0,0.91,1.0
+somatostatin,10,5,30,15,5,5,0.79,0.7
+cholecystokinin,2,1,10,5,1,1,0.75,0.67
