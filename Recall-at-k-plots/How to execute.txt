@@ -1,0 +1,6 @@
+To generate recall-at-k-curves, make sure the data files and the python script are in the same folder. Run the following command from terminal:
+
+>>python3 recall-at-k.py "insulin" "all_novel_predictions.csv"
+
+Replace "insulin" with other hormone names to generate the remaining plots.
+
