@@ -28,6 +28,10 @@ from sklearn.preprocessing import MinMaxScaler
 from joblib import Parallel, delayed
 from statistics import mean
 model = fasttext.load_model("BioWordVec_PubMed_MIMICIII_d200.bin")
+#with open('./dataset/full_biobert_embeddings.json') as json_file:
+#    model = json.load(json_file)
+#with open('./dataset/biobert_embeddings_200D_withcontext.json') as json_file:
+#    model = json.load(json_file)
 
 #a dict containing the hormone and the list of genes associated with it in HGv1 database
 with open('./dataset/hgv1_hormone_genes.json') as json_file:
@@ -46,6 +50,8 @@ for hormone in hormone_genes.keys():
         parts = hormone.split("/")
         w1 = model.get_word_vector(parts[0])
         w2 = model.get_word_vector(parts[1])
+		#w1 = model[parts[0]]
+		#w2 = model[parts[1]]
         alias_embeddings[hormone] = np.add(w1,w2)
 
 # Below two functions fit the classifier for given set of parameters and return the result on validation set.
@@ -113,6 +119,7 @@ def get_oversampled_train_data(train_data,dup_genes):
             train_marked[hormone] = 1
             for gene in eligible_genes[hormone]:
                 X_train_smote.append(model.get_word_vector(gene))
+				#X_train_smote.append(model[gene])
                 y_train_smote.append(cnt)
             cnt += 1
         else:
@@ -137,6 +144,7 @@ def get_oversampled_train_data(train_data,dup_genes):
             w1 = alias_embeddings[hor_map[hormone]]
         else:
             w1 = model.get_word_vector(hor_map[hormone])
+			#w1 = model[hor_map[hormone]]
         X_train_pos.append(np.concatenate([w1,embedding]))
 
     # add back the genes associated with multiple hormones that were removed earlier
@@ -145,8 +153,10 @@ def get_oversampled_train_data(train_data,dup_genes):
             w1 = alias_embeddings[hor]
         else:
             w1 = model.get_word_vector(hor)
+			#w1 = model[hor]
         for gene in duplicate_genes[hor]:
             w2 = model.get_word_vector(gene)
+			#w2 = model[gene]
             X_train_pos.append(np.concatenate([w1,w2]))
 
     #get negative train data, randomly sample from oversamples embeddings known to be not associated with a hormone
@@ -160,6 +170,7 @@ def get_oversampled_train_data(train_data,dup_genes):
             w1 = alias_embeddings[hormone]
         else:
             w1 = model.get_word_vector(hormone)
+			#w1 = model[hormone]
         rem_genes_embed = []
         for hor in oversampled_genes_pos.keys():
             if hor != hormone:
@@ -196,8 +207,10 @@ def transform_X_values(data_dict,train_marked):
                 np1 = alias_embeddings[hormone]
             else:
                 np1 = model.get_word_vector(hormone)
+				#np1 = model[hormone]
             for gene in data_dict[hormone]:
                 np2 = model.get_word_vector(gene)
+				#np2 = model[gene]
                 embeddings.append(np.concatenate([np1,np2]))
     return np.array(embeddings)
 
@@ -211,8 +224,10 @@ def transform_X_values_new(data_dict, bins, train_marked):
                     np1 = alias_embeddings[hormone]
                 else:
                     np1 = model.get_word_vector(hormone)
+					#np1 = model[hormone]
                 for gene in data_dict[hormone]:
                     np2 = model.get_word_vector(gene)
+					#np2 = model[gene]
                     embeddings.append(np.concatenate([np1,np2]))
     return np.array(embeddings)
 
@@ -441,9 +456,9 @@ for bin_no in all_bins:
 X_train_all, y_train_all, _train_marked = get_oversampled_train_data(train_val_data, dup_genes)
 
 #save the datasets
-np.save('./dataset/bioembeds_X_train_val_fold_'+str(test_bin)+'.npy',X_train_all)
-np.save('./dataset/bioembeds_y_train_val_fold_'+str(test_bin)+'.npy',y_train_all)
-with open('./dataset/train_val_marking_fold_'+str(test_bin)+'.json', 'w') as outfile:
+np.save('./output/bioembeds_X_train_val_fold_'+str(test_bin)+'.npy',X_train_all)
+np.save('./output/bioembeds_y_train_val_fold_'+str(test_bin)+'.npy',y_train_all)
+with open('./output/train_val_marking_fold_'+str(test_bin)+'_v1.json', 'w') as outfile:
     json.dump(_train_marked,outfile)
 outfile.close()
 
